@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spoolman GO</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 1.25rem;
+      padding: 2.5rem 2rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 { font-size: 2rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.25rem; }
+    .subtitle { color: #60a5fa; font-size: 1rem; font-weight: 600; margin-bottom: 1.5rem; }
+    p { color: #94a3b8; line-height: 1.7; font-size: 0.95rem; margin-bottom: 1rem; }
+    .features {
+      text-align: left;
+      list-style: none;
+      margin: 1.25rem 0 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .features li { color: #cbd5e1; font-size: 0.9rem; display: flex; gap: 0.6rem; align-items: flex-start; }
+    .features li::before { content: "›"; color: #60a5fa; font-weight: 700; flex-shrink: 0; }
+    .links { display: flex; flex-direction: column; gap: 0.75rem; }
+    a.btn {
+      display: block;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.75rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    a.btn:hover { opacity: 0.85; }
+    .btn-primary { background: #3b82f6; color: #fff; }
+    .btn-secondary { background: #1e293b; border: 1px solid #475569; color: #cbd5e1; }
+    footer {
+      margin-top: 2rem;
+      color: #475569;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    footer a { color: #64748b; text-decoration: none; }
+    footer a:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Spoolman GO</h1>
+    <p class="subtitle">Filament management for iPhone</p>
+
+    <p>
+      Manage your 3D printing filament spools from your iPhone.
+      Connects to your self-hosted Spoolman or FilaMan server — or explore the app in Demo Mode without any server.
+    </p>
+
+    <ul class="features">
+      <li>Dashboard with inventory overview and low-stock warnings</li>
+      <li>Full CRUD for spools, filaments, vendors and locations</li>
+      <li>NFC read &amp; write in OpenSpool 1.0 format</li>
+      <li>Supports Spoolman and FilaMan (Spoolman compatibility API)</li>
+      <li>Light, dark and system theme</li>
+      <li>No account, no cloud — your data stays with you</li>
+    </ul>
+
+    <div class="links">
+      <a class="btn btn-primary" href="https://github.com/Fazerize/spoolman-go">View on GitHub</a>
+      <a class="btn btn-secondary" href="https://github.com/Fazerize/spoolman-go/issues">Support &amp; Feedback</a>
+      <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Fazerize &middot; <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</body>
+</html>
