@@ -74,4 +74,4 @@ Spoolman GO does not collect any personal data. All data stays on your device an
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+© 2026 Fazerize. All rights reserved.
