@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Spoolman GO</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #60a5fa; text-decoration: none; font-size: 0.9rem; }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.25rem; }
+    .meta { color: #64748b; font-size: 0.85rem; margin-bottom: 2.5rem; }
+    .lang-switch {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .lang-switch a {
+      padding: 0.35rem 0.85rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      cursor: pointer;
+    }
+    .lang-switch a.active, .lang-switch a:hover {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-color: #475569;
+    }
+    section { display: none; }
+    section.active { display: block; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #f1f5f9; margin: 1.75rem 0 0.6rem; }
+    p { color: #94a3b8; line-height: 1.75; font-size: 0.95rem; margin-bottom: 0.75rem; }
+    table { width: 100%; border-collapse: collapse; margin: 0.75rem 0 1rem; font-size: 0.9rem; }
+    th { text-align: left; color: #64748b; font-weight: 600; padding: 0.5rem 0.75rem; border-bottom: 1px solid #1e293b; }
+    td { color: #94a3b8; padding: 0.5rem 0.75rem; border-bottom: 1px solid #1e293b; vertical-align: top; }
+    ul { color: #94a3b8; padding-left: 1.25rem; margin: 0.5rem 0 0.75rem; line-height: 1.75; font-size: 0.95rem; }
+    li { margin-bottom: 0.25rem; }
+    a { color: #60a5fa; }
+    footer { margin-top: 3rem; color: #475569; font-size: 0.8rem; padding-bottom: 2rem; }
+    footer a { color: #64748b; text-decoration: none; }
+    footer a:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav><a href="index.html">&#8592; Spoolman GO</a></nav>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">Version 1.0 &middot; 2026-04-30</p>
+
+    <div class="lang-switch">
+      <a class="active" onclick="show('en')" id="tab-en">English</a>
+      <a onclick="show('de')" id="tab-de">Deutsch</a>
+    </div>
+
+    <!-- ENGLISH -->
+    <section id="en" class="active">
+      <h2>About this app</h2>
+      <p>Spoolman GO is an iPhone companion app for managing 3D printing filament spools. It connects to a self-hosted Spoolman-compatible or FilaMan-compatible server that you operate yourself. The developer does not operate a backend service for normal app use.</p>
+
+      <h2>Data collected by the developer</h2>
+      <p>The developer of Spoolman GO does <strong>not</strong> collect, transmit, or store any personal data on external servers. No analytics SDKs, crash-reporting services, advertising frameworks, or third-party tracking are included in the app.</p>
+
+      <h2>Data stored locally on your device</h2>
+      <p>The following data is saved exclusively in the app's local storage on your device:</p>
+      <table>
+        <tr><th>Data</th><th>Purpose</th></tr>
+        <tr><td>Server URL</td><td>Connecting to your self-hosted Spoolman/FilaMan instance</td></tr>
+        <tr><td>API profile</td><td>Detected API type (Spoolman or FilaMan)</td></tr>
+        <tr><td>Theme preference</td><td>Light/dark/system appearance</td></tr>
+        <tr><td>Language preference</td><td>App language override (system, English, German)</td></tr>
+        <tr><td>Low-stock threshold</td><td>Warning threshold for nearly empty spools</td></tr>
+        <tr><td>Onboarding state</td><td>Whether first-launch setup has been completed</td></tr>
+        <tr><td>App mode</td><td>Demo Mode or Live Mode</td></tr>
+      </table>
+      <p>This data never leaves your device unless you explicitly point the app to an external server.</p>
+
+      <h2>Communication with your server</h2>
+      <p>In Live Mode, the app connects directly to the Spoolman-compatible server URL you provide. All filament, spool, vendor, and location data is fetched from and written to that server. The app developer has no access to this data.</p>
+      <p>In Demo Mode, the app operates entirely offline using built-in sample data. No network requests are made.</p>
+
+      <h2>NFC</h2>
+      <p>The app can read and write NFC tags for spool identification using the OpenSpool format. NFC tag data is only read from or written to physical tags in your possession. No NFC data is transmitted externally.</p>
+
+      <h2>Security recommendations</h2>
+      <ul>
+        <li>Use the app on a local network or VPN rather than a publicly accessible Spoolman instance.</li>
+        <li>Prefer HTTPS connections for any public-facing server setup.</li>
+        <li>The app warns you when an unencrypted HTTP connection is configured.</li>
+      </ul>
+
+      <h2>Children's privacy</h2>
+      <p>The app is not directed at children under 13 and does not knowingly collect data from children.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>Any future changes will be noted with an updated version date at the top of this document and reflected in the App Store listing.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about privacy: <a href="mailto:github@faze.pm">github@faze.pm</a></p>
+      <p>Support: <a href="https://github.com/Fazerize/spoolman-go/issues">github.com/Fazerize/spoolman-go/issues</a></p>
+    </section>
+
+    <!-- DEUTSCH -->
+    <section id="de">
+      <h2>Über diese App</h2>
+      <p>Spoolman GO ist eine iPhone-Begleit-App zur Verwaltung von 3D-Druck-Filamentspulen. Die App verbindet sich mit einem selbst gehosteten Spoolman-kompatiblen oder FilaMan-kompatiblen Server, den du selbst betreibst. Der Entwickler betreibt keinen eigenen Backend-Dienst.</p>
+
+      <h2>Vom Entwickler erhobene Daten</h2>
+      <p>Der Entwickler von Spoolman GO erhebt, überträgt oder speichert <strong>keine</strong> personenbezogenen Daten auf externen Servern. Die App enthält keine Analyse-SDKs, Absturzmeldedienste, Werbeframeworks oder Drittanbieter-Tracking.</p>
+
+      <h2>Lokal auf deinem Gerät gespeicherte Daten</h2>
+      <p>Die folgenden Daten werden ausschließlich im lokalen App-Speicher auf deinem Gerät gespeichert:</p>
+      <table>
+        <tr><th>Daten</th><th>Zweck</th></tr>
+        <tr><td>Server-URL</td><td>Verbindung mit deiner selbst gehosteten Spoolman/FilaMan-Instanz</td></tr>
+        <tr><td>API-Profil</td><td>Erkannter API-Typ (Spoolman oder FilaMan)</td></tr>
+        <tr><td>Design-Einstellung</td><td>Hell/Dunkel/System-Darstellung</td></tr>
+        <tr><td>Spracheinstellung</td><td>App-Sprache (System, Englisch, Deutsch)</td></tr>
+        <tr><td>Fast-leer-Warnschwelle</td><td>Warnschwelle für fast leere Spulen</td></tr>
+        <tr><td>Onboarding-Status</td><td>Ob die Ersteinrichtung abgeschlossen wurde</td></tr>
+        <tr><td>App-Modus</td><td>Demo-Modus oder Live-Modus</td></tr>
+      </table>
+      <p>Diese Daten verlassen dein Gerät nicht, außer du verbindest die App ausdrücklich mit einem externen Server.</p>
+
+      <h2>Kommunikation mit deinem Server</h2>
+      <p>Im Live-Modus verbindet sich die App direkt mit der von dir angegebenen Spoolman-kompatiblen Server-URL. Alle Filament-, Spulen-, Hersteller- und Standortdaten werden von diesem Server abgerufen und dorthin geschrieben. Der App-Entwickler hat keinen Zugriff auf diese Daten.</p>
+      <p>Im Demo-Modus arbeitet die App vollständig offline mit integrierten Beispieldaten. Es werden keine Netzwerkanfragen gestellt.</p>
+
+      <h2>NFC</h2>
+      <p>Die App kann NFC-Tags zur Spulenidentifikation im OpenSpool-Format lesen und beschreiben. NFC-Tag-Daten werden ausschließlich von physischen Tags in deinem Besitz gelesen oder auf diese geschrieben. Es werden keine NFC-Daten extern übertragen.</p>
+
+      <h2>Sicherheitshinweise</h2>
+      <ul>
+        <li>Verwende die App im lokalen Netzwerk oder über VPN, nicht über eine öffentlich zugängliche Spoolman-Instanz.</li>
+        <li>Bevorzuge HTTPS-Verbindungen bei öffentlich erreichbaren Serversetups.</li>
+        <li>Die App warnt dich, wenn eine unverschlüsselte HTTP-Verbindung konfiguriert ist.</li>
+      </ul>
+
+      <h2>Datenschutz für Kinder</h2>
+      <p>Die App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von Kindern.</p>
+
+      <h2>Änderungen dieser Datenschutzerklärung</h2>
+      <p>Zukünftige Änderungen werden mit einem aktualisierten Versionsdatum am Anfang dieses Dokuments und in der App-Store-Beschreibung kenntlich gemacht.</p>
+
+      <h2>Kontakt</h2>
+      <p>Bei Datenschutzfragen: <a href="mailto:github@faze.pm">github@faze.pm</a></p>
+      <p>Support: <a href="https://github.com/Fazerize/spoolman-go/issues">github.com/Fazerize/spoolman-go/issues</a></p>
+    </section>
+
+    <footer>
+      &copy; 2026 Fazerize &middot; <a href="index.html">Spoolman GO</a>
+    </footer>
+  </div>
+
+  <script>
+    function show(lang) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.getElementById('tab-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
