@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imprint — Spoolman GO</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    nav { margin-bottom: 2rem; }
+    nav a { color: #60a5fa; text-decoration: none; font-size: 0.9rem; }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 1.75rem; font-weight: 800; color: #f8fafc; margin-bottom: 0.25rem; }
+    .meta { color: #64748b; font-size: 0.85rem; margin-bottom: 2.5rem; }
+    .lang-switch {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .lang-switch a {
+      padding: 0.35rem 0.85rem;
+      border-radius: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      cursor: pointer;
+    }
+    .lang-switch a.active, .lang-switch a:hover {
+      background: #1e293b;
+      color: #e2e8f0;
+      border-color: #475569;
+    }
+    section { display: none; }
+    section.active { display: block; }
+    h2 { font-size: 1.1rem; font-weight: 700; color: #f1f5f9; margin: 1.75rem 0 0.6rem; }
+    p { color: #94a3b8; line-height: 1.75; font-size: 0.95rem; margin-bottom: 0.75rem; }
+    a { color: #60a5fa; }
+    footer { margin-top: 3rem; color: #475569; font-size: 0.8rem; padding-bottom: 2rem; }
+    footer a { color: #64748b; text-decoration: none; }
+    footer a:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav><a href="index.html">&#8592; Spoolman GO</a></nav>
+
+    <h1>Imprint</h1>
+    <p class="meta">2026-05-04</p>
+
+    <div class="lang-switch">
+      <a class="active" onclick="show('en')" id="tab-en">English</a>
+      <a onclick="show('de')" id="tab-de">Deutsch</a>
+    </div>
+
+    <!-- DEUTSCH -->
+    <section id="de" class="active">
+      <h2>Angaben gemäß § 5 TMG / § 18 MStV</h2>
+
+      <h2>Verantwortlich für den Inhalt</h2>
+      <p>
+        Florian Pflaum<br>
+        Deutschland
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail: <a href="mailto:github@faze.pm">github@faze.pm</a>
+      </p>
+
+      <h2>Umsatzsteuer-ID</h2>
+      <p>
+        Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:<br>
+        <em>[folgt nach Erteilung durch das Finanzamt]</em>
+      </p>
+
+      <h2>Streitschlichtung</h2>
+      <p>
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+        <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>
+      </p>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+        Verbraucherschlichtungsstelle teilzunehmen.
+      </p>
+
+      <h2>Haftung für Inhalte</h2>
+      <p>
+        Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten
+        nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
+        Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde
+        Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
+        Tätigkeit hinweisen.
+      </p>
+
+      <h2>Haftung für Links</h2>
+      <p>
+        Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+        Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+        Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
+        Seiten verantwortlich.
+      </p>
+
+      <h2>Urheberrecht</h2>
+      <p>
+        Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
+        dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art
+        der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
+        Zustimmung des jeweiligen Autors bzw. Erstellers.
+      </p>
+    </section>
+
+    <!-- ENGLISH -->
+    <section id="en">
+      <h2>Information according to § 5 TMG (German Telemedia Act)</h2>
+
+      <h2>Responsible for content</h2>
+      <p>
+        Florian Pflaum<br>
+        Germany
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:github@faze.pm">github@faze.pm</a>
+      </p>
+
+      <h2>VAT ID</h2>
+      <p>
+        Value Added Tax identification number according to §27a UStG:<br>
+        <em>[pending issuance by the tax office]</em>
+      </p>
+
+      <h2>Dispute resolution</h2>
+      <p>
+        The European Commission provides a platform for online dispute resolution (ODR):
+        <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>
+      </p>
+      <p>
+        We are not willing or obliged to participate in dispute resolution proceedings
+        before a consumer arbitration board.
+      </p>
+
+      <h2>Liability for content</h2>
+      <p>
+        As a service provider, we are responsible for our own content on these pages in
+        accordance with § 7 para. 1 TMG. According to §§ 8 to 10 TMG, however, we are not
+        obligated as a service provider to monitor transmitted or stored third-party information
+        or to investigate circumstances that indicate illegal activity.
+      </p>
+
+      <h2>Liability for links</h2>
+      <p>
+        Our offer contains links to external third-party websites over whose content we have
+        no influence. Therefore, we cannot assume any liability for this external content. The
+        respective provider or operator of the pages is always responsible for the content of
+        the linked pages.
+      </p>
+
+      <h2>Copyright</h2>
+      <p>
+        The content and works created by the site operator on these pages are subject to German
+        copyright law. Reproduction, editing, distribution, and any kind of exploitation outside
+        the limits of copyright require the written consent of the respective author or creator.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Fazerize &middot; <a href="index.html">Spoolman GO</a>
+    </footer>
+  </div>
+
+  <script>
+    function show(lang) {
+      document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      document.getElementById('tab-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
